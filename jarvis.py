@@ -19,6 +19,10 @@ def processCommand(command):
         webbrowser.open("https://facebook.com")
     elif "open youtube" in command.lower():
         webbrowser.open("https://youtube.com")
+    elif "open instgram" in command.lower():
+        webbrowser.open("https://instagram.com")
+    elif "open chess" in command.lower():
+        webbrowser.open("https://chess.com")
     elif command.lower().startswith("play"):
         song = command.lower().split(" ")[1]
         if song in musicLibrary.music:
